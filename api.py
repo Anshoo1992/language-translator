@@ -24,5 +24,5 @@ def get_translated_text():
 
     translated_text = languageTranslator.translate(input_text, source_lang, target_lang)
     return translated_text, 200
-PORT = int(os.environ.get('PORT', 33507))
+PORT = int(os.environ.get('PORT', 5000))
 app.run(host='0.0.0.0', port=PORT)
