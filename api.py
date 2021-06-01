@@ -23,5 +23,5 @@ def get_translated_text():
 
     translated_text = languageTranslator.translate(input_text, source_lang, target_lang)
     return translated_text, 200
-
-app.run()
+if __name__ == "__main__":
+    app.run()
